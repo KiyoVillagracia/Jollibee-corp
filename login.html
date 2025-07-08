@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login to Jollibee</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (username === "admin" && password === "jollibee") {
+        alert("Login successful!");
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid login credentials.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Login Page</h1>
+  </header>
+  <main>
+    <section>
+      <label>Username: <input type="text" id="username" /></label><br />
+      <label>Password: <input type="password" id="password" /></label><br />
+      <button onclick="login()">Login</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jollibee Foods Corporation</p>
+  </footer>
+</body>
+</html>
